@@ -22,4 +22,7 @@ export class ShoppingListComponent implements OnInit {
       });
   }
 
+  onSelectedShoppingList(i){
+    this.shoppinglistService.shoppingListSubject.next(i);
+  }
 }
